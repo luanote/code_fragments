@@ -1,0 +1,5 @@
+gdb luaL_checkstring(L, IDX) 
+
+=>
+
+(char*)(&(((GCobj *)(((uintptr_t)((L->base+IDX-1)->gcr.gcptr32))))->str)+1)
